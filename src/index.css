@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Outfit", sans-serif;
+
+  /* Premium Academic Theme Colors (Deep Teal & Sophisticated Orange) */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-500: #0c4a6e;
+  /* Professional Navy Blue/Teal */
+  --color-primary-600: #075985;
+  --color-primary-700: #0369a1;
+
+  --color-accent-500: #f97316;
+  /* Energetic Orange */
+  --color-accent-600: #ea580c;
+
+  /* Neutral Scale */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-900: #111827;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-700 bg-white antialiased overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold text-slate-900 tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3.5 px-10 rounded-xl transition-all duration-300 shadow-lg shadow-primary-500/20 hover:shadow-xl hover:shadow-primary-500/30 transform hover:-translate-y-0.5 inline-block text-center;
+  }
+
+  .btn-accent {
+    @apply bg-accent-500 hover:bg-accent-600 text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-lg shadow-accent-500/20 hover:shadow-xl hover:shadow-accent-500/30 transform hover:-translate-y-0.5 inline-block text-center uppercase tracking-wider text-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-slate-50 text-primary-500 font-semibold py-3.5 px-10 rounded-xl border border-slate-200 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 inline-block text-center;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+
+  .card-modern {
+    @apply bg-white rounded-xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary-100 transition-all duration-500 transform hover:-translate-y-1;
+  }
+}
