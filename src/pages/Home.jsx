@@ -114,7 +114,7 @@ const Home = () => {
               <span className="w-16 h-1 bg-accent-500"></span>
               <span className="text-sm md:text-base font-heading">Empowering Academic Excellence</span>
             </p>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tighter mb-10 drop-shadow-2xl font-heading">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tighter mb-10 drop-shadow-2xl font-heading">
               Shape Your <br />
               <span className="text-accent-500 italic relative inline-block">
                 Future.
@@ -123,16 +123,16 @@ const Home = () => {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl leading-relaxed font-sans font-medium">
               Standard Coaching Academy provides a strong, concept-based education for classes 9 to 12 along with focused MDCAT and ETEA and Related Courses.            </p>
-            <div className="flex flex-wrap gap-6 items-center">
+            <div className="flex flex-col sm:flex-row gap-6 items-center">
               <Link
                 to="/contact#admission-form"
-                className="btn-accent py-5 px-12 text-base md:text-lg font-bold font-sans tracking-wider shadow-2xl shadow-accent-500/40 transform hover:-translate-y-1 transition-all duration-300 rounded-full text-center min-w-[280px] antialiased"
+                className="btn-accent py-5 px-12 text-base md:text-lg font-bold font-sans tracking-wider shadow-2xl shadow-accent-500/40 transform hover:-translate-y-1 transition-all duration-300 rounded-full text-center w-full sm:min-w-[280px] sm:w-auto antialiased"
               >
                 Apply for Admission
               </Link>
               <Link
                 to="/about"
-                className="py-5 px-12 text-base md:text-lg font-bold font-sans tracking-wider text-white border-2 border-white/20 bg-white/5 backdrop-blur-xl rounded-full hover:bg-white/10 hover:border-white/40 transition-all duration-300 transform hover:-translate-y-1 shadow-2xl shadow-black/20 text-center min-w-[280px] antialiased"
+                className="py-5 px-12 text-base md:text-lg font-bold font-sans tracking-wider text-white border-2 border-white/20 bg-white/5 backdrop-blur-xl rounded-full hover:bg-white/10 hover:border-white/40 transition-all duration-300 transform hover:-translate-y-1 shadow-2xl shadow-black/20 text-center w-full sm:min-w-[280px] sm:w-auto antialiased"
               >
                 Our Philosophy
               </Link>
@@ -200,7 +200,7 @@ const Home = () => {
       {/* ================= WHY CHOOSE US ================= */}
       <section className="section-padding bg-white overflow-hidden relative">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="relative">
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
                 <img
@@ -298,8 +298,8 @@ const Home = () => {
                         type="submit"
                         disabled={isSubmitting}
                         className={`w-full py-5 rounded-2xl font-bold font-sans tracking-wider text-lg antialiased transition-all duration-300 transform shadow-xl shadow-accent-500/20 ${isSubmitting
-                            ? 'bg-slate-700 text-slate-400 cursor-not-allowed translate-y-0 shadow-none'
-                            : 'bg-accent-500 text-white hover:bg-accent-600 hover:-translate-y-1 active:scale-95'
+                          ? 'bg-slate-700 text-slate-400 cursor-not-allowed translate-y-0 shadow-none'
+                          : 'bg-accent-500 text-white hover:bg-accent-600 hover:-translate-y-1 active:scale-95'
                           }`}
                       >
                         {isSubmitting ? (

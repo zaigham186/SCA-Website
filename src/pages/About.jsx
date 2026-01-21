@@ -73,7 +73,7 @@ const About = () => {
               </span>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter font-heading">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter font-heading">
               Empowering Minds, <br />
               <span className="text-accent-500 italic">Shaping</span> Futures.
             </h1>

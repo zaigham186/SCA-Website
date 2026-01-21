@@ -125,7 +125,7 @@ const Courses = () => {
               <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
               <span className="text-xs font-bold text-white uppercase tracking-[0.2em] font-heading">Academic Excellence</span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter font-heading">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter font-heading">
               Specialized <br />
               <span className="text-accent-500 italic">Learning</span> Paths.
             </h1>

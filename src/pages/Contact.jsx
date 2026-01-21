@@ -117,7 +117,7 @@ const Contact = () => {
               <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
               <span className="text-xs font-bold text-white uppercase tracking-[0.2em] font-heading">Connect With Us</span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter font-heading">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter font-heading">
               Get In <span className="text-accent-500 italic">Touch</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed mx-auto max-w-2xl font-sans font-medium">
@@ -290,7 +290,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full text-white font-black py-5 rounded-2xl shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group/btn
+                    className={`w-full text-white font-black py-5 rounded-full shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group/btn
                                ${isSubmitting
                         ? 'bg-slate-400 cursor-not-allowed shadow-none'
                         : 'bg-primary-600 shadow-primary-900/30 hover:bg-primary-700 hover:shadow-primary-900/40 hover:-translate-y-1'
@@ -390,7 +390,7 @@ const Contact = () => {
               </div>
 
               {/* MAP */}
-              <div className="rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200/50 h-[450px] bg-slate-100 relative group border-4 border-white">
+              <div className="rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200/50 h-[300px] md:h-[450px] bg-slate-100 relative group border-4 border-white">
                 {/* Real Google Maps Embed */}
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.922696686265!2d71.4750076!3d33.9945193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d9114aec8f5e2f%3A0x344c8c8430d5ac9e!2sStandard%20Coaching%20Academy(S-CA)!5e0!3m2!1sen!2s!4v1768988950568!5m2!1sen!2s"

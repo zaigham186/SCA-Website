@@ -114,7 +114,7 @@ const Navbar = () => {
           ))}
           <Link
             to="/courses"
-            className="btn-accent w-full py-4 text-center rounded-2xl"
+            className="px-8 py-4 bg-accent-500 text-white font-bold rounded-full shadow-lg shadow-accent-500/20 text-center font-sans tracking-wider text-sm antialiased"
           >
             Start Learning
           </Link>
